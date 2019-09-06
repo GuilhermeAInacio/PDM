@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="org.guilhermealves.happyDay"
+        version="0.0.1">
+
+    <name>Happy Day</name>
+
+    <description>
+       Happy Day
+    </description>
+
+    <author href="http://guilhermealves.org" email="guilhermealves@alves.org">
+        Guilherme Alves
+    </author>
+
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+
+    <preference name="android-minSdkVersion" value="16" />
+    <platform name="android" />
+
+    <icon src="icone.png" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <splash src="splash.png" />
+</widget>

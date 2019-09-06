@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="menu.css">
+        
+    </head>
+    <body>   
+        <form action="pagina.html" method="get"> <input type="submit" value="nome do link" id="link" hidden="true" /></form>
+            <input type="radio" name="opcao" id="opcao-logon" checked>
+            <label for="opcao-logon">Já tenho uma conta.</label>
+    
+            <input type="radio" name="opcao" id="opcao-cadastro">
+            <label for="opcao-cadastro">Quero me cadastrar.</label>
+
+        <img src="imagens/logo-gui.png" class="img-logo">
+
+        <div class="container-menus">
+            <div id="menu-logon" class="menu">
+                <p>Login:</p>
+                <input type="text" name="usuario">
+                <p>Senha:</p>
+                <input type="password" name="senha">
+                <br/><br/>
+                <input type="button" class="loginKey" onclick="login()">
+            </div>
+            <div id="menu-cadastro" class="menu">
+                <p>E-mail:</p>
+                <input type="text" name="e-mail">
+                <p>Senha:</p>
+                <input type="text" name="senha">
+                 <p>Confirme sua senha:</p>
+                <input type="text" name="senha">
+                <br/><br/>
+                <input type="button" class="signIn">
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+<script type="text/javascript">
+    function login(){
+        document.getElementById('link').click();
+    }
+</script>

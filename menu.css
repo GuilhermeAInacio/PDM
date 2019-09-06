@@ -1,0 +1,116 @@
+/* funcionamento */
+#opcao-logon:checked ~ #menu-logon,
+#opcao-cadastro:checked ~ #menu-cadastro {
+    display: none;
+}
+
+input[type=radio] {
+    display: none;
+}
+.menu {
+    width: 100%;
+}
+
+/* decoracao */
+body {
+    background: rgb(40, 60, 75);
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.img-logo{
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+
+label {
+    background: center top no-repeat #00cfa2;
+    background-size: 4em;
+    color: white;
+    display: block;
+    font-size: 75%;
+    padding: 4em 0 1em;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+    :checked + label {
+        background-color: #02907a;
+    }
+
+/* posicionamento */
+label {
+    width: 50%;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+    label[for=opcao-logon] {
+        left: 0;
+    }
+    label[for=opcao-cadastro] {
+        right: 0;
+    }
+
+.menu {
+    margin-bottom: 100px;
+}
+
+.loginKey {
+    background-size: 4em;
+    width: 55px; 
+    height: 55px;
+    background-image:url("imagens/key.png");
+    background-color: #00cfa2;
+    border: none;
+}
+
+.signIn{
+    background-size: 4em;
+    width: 55px; 
+    height: 55px;
+    background-image:url("imagens/24px.svg");
+    background-color: #00cfa2;
+    border: none;
+}
+
+/* animado */
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+.container-menus {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: transform 300ms ease;
+            transition: -webkit-transform 300ms ease;
+    width: 200%;
+}
+
+.container-menus .menu {
+    float: left;
+    width: 50%;
+}
+
+#opcao-cadastro:checked ~ .container-menus {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+/* hack android velho */
+body { -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix {
+  from { padding: 0; }
+  to { padding: 0; }
+}
+
+p{  
+    text-align: left;
+    margin-left: 25%;
+    color: #02907a;
+}
