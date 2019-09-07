@@ -9,10 +9,10 @@
     <body>   
         <form action="pagina.html" method="get"> <input type="submit" value="nome do link" id="link" hidden="true" /></form>
             <input type="radio" name="opcao" id="opcao-logon" checked>
-            <label for="opcao-logon">Já tenho uma conta.</label>
+            <label for="opcao-logon">Login</label>
     
-            <input type="radio" name="opcao" id="opcao-cadastro">
-            <label for="opcao-cadastro">Quero me cadastrar.</label>
+            <input type="radio" name="opcao" id="opcao-sobre">
+            <label for="opcao-sobre">Sobre</label>
 
         <img src="imagens/logo-gui.png" class="img-logo">
 
@@ -23,17 +23,17 @@
                 <p>Senha:</p>
                 <input type="password" name="senha">
                 <br/><br/>
-                <input type="button" class="loginKey" onclick="login()">
+                <input type="button" class="signIn" onclick="login()">
             </div>
-            <div id="menu-cadastro" class="menu">
-                <p>E-mail:</p>
-                <input type="text" name="e-mail">
-                <p>Senha:</p>
-                <input type="text" name="senha">
-                 <p>Confirme sua senha:</p>
-                <input type="text" name="senha">
-                <br/><br/>
-                <input type="button" class="signIn">
+            <div id="menu-sobre" class="menu">
+                <p>Esse Aplicativo foi feito para sortear pessoas, em minha equipe na empresa, todas as sextas </p>
+                <p>sorteamos duas pessoas para trazer um bolo cada, de inicio era usado um site de sorteio, porém</p>
+                <p>era necessário colocar os participantes todas as vezes, e se fosse sorteada uma pessoa que já tinha sido 
+                <p>sorteada nas semanas anteriores, tinha que sortear novamente.</p>
+                <p>Sendo assim, foi feita uma planilha de controle, que não sorteia a pessoa, se ela tiver sido sorteada nas semanas anteriores</p>
+                <p>Porém, assim que vi o cordova, tive a ideia de fazer um app para isso, usando o firebase como banco de dados, assim, todos poderam</p>
+                <p>ter o app em seus celulares, será feita também uma automatização, para o app sortear toda quinta ao 12:00 e avisar os participantes</p>
+                <p>Guilherme Alves Rodrigues Inácio - ADS Fatec Carapicuíba</p>
             </div>
         </div>
         

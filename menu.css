@@ -1,6 +1,6 @@
 /* funcionamento */
 #opcao-logon:checked ~ #menu-logon,
-#opcao-cadastro:checked ~ #menu-cadastro {
+#opcao-sobre:checked ~ #menu-sobre {
     display: none;
 }
 
@@ -52,7 +52,7 @@ label {
     label[for=opcao-logon] {
         left: 0;
     }
-    label[for=opcao-cadastro] {
+    label[for=opcao-sobre] {
         right: 0;
     }
 
@@ -60,19 +60,10 @@ label {
     margin-bottom: 100px;
 }
 
-.loginKey {
-    background-size: 4em;
-    width: 55px; 
-    height: 55px;
-    background-image:url("imagens/key.png");
-    background-color: #00cfa2;
-    border: none;
-}
-
 .signIn{
     background-size: 4em;
-    width: 55px; 
-    height: 55px;
+    width: 53px; 
+    height: 53px;
     background-image:url("imagens/24px.svg");
     background-color: #00cfa2;
     border: none;
@@ -97,7 +88,7 @@ body {
     width: 50%;
 }
 
-#opcao-cadastro:checked ~ .container-menus {
+#opcao-sobre:checked ~ .container-menus {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
 }
