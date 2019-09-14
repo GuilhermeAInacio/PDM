@@ -23,5 +23,5 @@
 
     <icon src="icone.png" />
     <plugin name="cordova-plugin-splashscreen" />
-    <splash src="splash.png" />
+    <gap:splash src="Spin.png" />
 </widget>
